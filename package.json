@@ -1,0 +1,47 @@
+{
+  "name": "ai-demand-questionnaire",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/check-deploy-config.mjs && tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --pretty false",
+    "check:migrations": "node scripts/check-migrations.mjs",
+    "check:secrets": "node scripts/check-client-secrets.mjs",
+    "check:analysis": "node scripts/check-analysis-contracts.mjs",
+    "check:deploy": "node scripts/check-deploy-config.mjs",
+    "verify": "npm run typecheck && npm test && npm run check:migrations && npm run build && npm run check:secrets && npm run check:analysis",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "seed:preview": "node scripts/seed-preview-data.mjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "5.4.0",
+    "@supabase/supabase-js": "2.110.8",
+    "@tanstack/react-query": "5.101.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "react-hook-form": "7.82.0",
+    "react-router-dom": "7.11.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1",
+    "@testing-library/jest-dom": "7.0.0",
+    "@testing-library/react": "16.3.2",
+    "@testing-library/user-event": "14.6.1",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.4",
+    "jsdom": "29.1.1",
+    "typescript": "5.9.3",
+    "vite": "8.1.5",
+    "vitest": "4.1.10"
+  }
+}

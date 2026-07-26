@@ -1,0 +1,29 @@
+:root {
+  --color-page: #f4f4f1;
+  --color-surface: #ffffff;
+  --color-text: #171a18;
+  --color-text-muted: #747a76;
+  --color-line: #dfe2de;
+  --color-accent: #3f6754;
+  --color-accent-soft: #e8f0eb;
+  --color-warning: #a06a24;
+  --color-danger: #b14b45;
+  --color-ink: #17211c;
+  --font-sans: "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  color: var(--color-text);
+  background: var(--color-surface);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
