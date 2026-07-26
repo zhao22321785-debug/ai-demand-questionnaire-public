@@ -4,6 +4,10 @@
 
 Security fixes are applied to the latest version on `main`.
 
+## Current dependency note
+
+This project is a browser-only SPA built with `createBrowserRouter`. It does not use React Router's unstable RSC APIs, SSR or Server Actions. `GHSA-qwww-vcr4-c8h2` applies only to unstable RSC APIs; reassess this boundary before adding those capabilities, and upgrade when the announced patched release becomes available on npm.
+
 ## Reporting a vulnerability
 
 Do not disclose vulnerabilities, credentials, personal data or production URLs in a public issue.
